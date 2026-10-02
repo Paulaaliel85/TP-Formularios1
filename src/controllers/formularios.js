@@ -26,7 +26,11 @@ const obtenerFormularios = async (req, res) => {
   try {
     const formularios = await formularioRepository.find({
       where: { activo: true },
-      relations: ["categorias", "categorias.preguntas"]
+      relations: {
+        categorias: {
+          preguntas: true
+        }
+      }
     });
     return res.json(formularios);
   } catch (error) {
@@ -39,7 +43,11 @@ const obtenerFormulariosPorId = async (req, res) => {
     const id = Number(req.params.id);
     const formulario = await formularioRepository.findOne({
       where: { id },
-      relations: ["categorias", "categorias.preguntas"]
+      relations: {
+        categorias: {
+          preguntas: true
+        }
+      }
     });
 
     if (!formulario) {

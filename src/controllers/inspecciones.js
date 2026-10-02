@@ -50,7 +50,9 @@ const obtenerResumenInspeccion = async (req, res) => {
     const id = Number(req.params.id);
     const inspeccion = await inspeccionRepository.findOne({
       where: { id },
-      relations: ["respuestas"]
+      relations: {
+        respuestas: true
+      }
     });
 
     if (!inspeccion) {

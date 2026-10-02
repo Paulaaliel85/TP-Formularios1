@@ -8,7 +8,7 @@ const {
   obtenerResumenInspeccion,
   actualizarInspeccion,
   eliminarInspeccion,
-} = require("../controllers/inspeccion.js");
+} = require("../controllers/inspecciones.js");
 
 router.post("/", validateRequest(inspeccionSchema), crearInspeccion);
 router.get("/:id/resumen", obtenerResumenInspeccion);

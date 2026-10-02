@@ -8,7 +8,7 @@ const {
   obtenerFormulariosPorId,
   actualizarFormulario,
   eliminarFormulario,
-} = require("../controllers/formulario.js");
+} = require("../controllers/formularios.js");
 
 router.post("/", validateRequest(formularioSchema), crearFormulario);
 router.get("/:id", obtenerFormulariosPorId);
