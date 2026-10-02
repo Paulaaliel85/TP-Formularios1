@@ -1,0 +1,26 @@
+{
+  "name": "tp-formularios1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulaaliel85/TP-Formularios1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Paulaaliel85/TP-Formularios1/issues"
+  },
+  "homepage": "https://github.com/Paulaaliel85/TP-Formularios1#readme",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2"
+  }
+}
